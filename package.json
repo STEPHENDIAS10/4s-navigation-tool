@@ -20,6 +20,10 @@
       {
         "command": "4s-navigation-tool.subwordSearch",
         "title": "Subword Search"
+      },
+      {
+          "command": "4s-navigation-tool.stackOverflowSearch",
+          "title": "stackOverflow Search"
       }
     ]
   },

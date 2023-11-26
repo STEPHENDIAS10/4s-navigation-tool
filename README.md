@@ -2,52 +2,45 @@
 
 This is the README for your extension "4s-navigation-tool". After writing up a brief description, we recommend including the following sections.
 
-## Features
+## Overview
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This Visual Studio Code extension adds two commands to enhance your coding experience:
 
-For example if there is an image subfolder under your extension project workspace:
+1. **Go to Definition:** Navigate to the definition of the selected word in your code.
 
-\!\[feature X\]\(images/feature-x.png\)
+2. **Subword Search:** Perform a search for the selected subword in the entire project.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Installation
 
-## Requirements
+To install the extension, follow these steps:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Launch Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or use the keyboard shortcut `Ctrl+Shift+X`.
+3. Search for "4s-navigation-tool" in the Extensions view search box.
+4. Click on the extension in the search results and then click the Install button.
 
-## Extension Settings
+## Usage
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Go to Definition
 
-For example:
+1. Place the cursor on a word in your code.
+2. Run the "Go to Definition" command by opening the Command Palette (`Ctrl+Shift+P`) and typing "Go to Definition" or use the keyboard shortcut.
+3. Visual Studio Code will navigate to the definition of the selected word.
 
-This extension contributes the following settings:
+### Subword Search
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+1. Select a portion of text (subword) in your code.
+2. Run the "Subword Search" command by opening the Command Palette (`Ctrl+Shift+P`) and typing "Subword Search" or use the keyboard shortcut.
+3. The "Find in Files" panel will open with the subword as the search term.
 
-## Known Issues
+### Stack Overflow Search
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+1. Run the "Stack Overflow Search" command by opening the Command Palette (`Ctrl+Shift+P`) and typing "Stack Overflow Search" or use the keyboard shortcut.
+2. Enter your Stack Overflow search query in the input box that appears.
+3. Your default web browser will open with a Stack Overflow search for the entered text.
+## Issues and Feedback
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
+If you encounter any issues or have feedback, please feel free to [create an issue on GitHub](https://github.com/STEPHENDIAS10/4s-navigation-tool/issues).
 
 ## Following extension guidelines
 

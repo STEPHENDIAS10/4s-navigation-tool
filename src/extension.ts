@@ -27,7 +27,21 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
-    context.subscriptions.push(disposableGoToDefinition, disposableSubwordSearch);
+    let disposableStackOverflowSearch = vscode.commands.registerCommand('4s-navigation-tool.stackOverflowSearch', async () => {
+        const searchQuery = await vscode.window.showInputBox({
+            prompt: 'Enter your Stack Overflow search query'
+        });
+
+        if (searchQuery) {
+            const encodedQuery = encodeURIComponent(searchQuery);
+            const stackOverflowSearchUrl = `https://stackoverflow.com/search?q=${encodedQuery}`;
+            vscode.env.openExternal(vscode.Uri.parse(stackOverflowSearchUrl));
+        } else {
+            vscode.window.showInformationMessage('No search query entered for Stack Overflow search.');
+        }
+    });
+
+    context.subscriptions.push(disposableGoToDefinition, disposableSubwordSearch, disposableStackOverflowSearch);
 }
 // This method is called when your extension is deactivated
 export function deactivate() {}
