@@ -2,6 +2,7 @@
   "name": "4s-navigation-tool",
   "displayName": "4S navigation tool",
   "description": "",
+  "publisher": "4Snavigationtool",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.84.0"
