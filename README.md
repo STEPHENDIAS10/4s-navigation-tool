@@ -1,6 +1,6 @@
 # 4s-navigation-tool README
 
-This is the README for your extension "4s-navigation-tool". After writing up a brief description, we recommend including the following sections.
+This is the README for extension "4s-navigation-tool".
 
 ## Overview
 
