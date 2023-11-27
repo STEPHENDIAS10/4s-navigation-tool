@@ -4,11 +4,13 @@ This is the README for your extension "4s-navigation-tool". After writing up a b
 
 ## Overview
 
-This Visual Studio Code extension adds two commands to enhance your coding experience:
+This Visual Studio Code extension adds three commands to enhance your coding experience:
 
 1. **Go to Definition:** Navigate to the definition of the selected word in your code.
 
 2. **Subword Search:** Perform a search for the selected subword in the entire project.
+
+3. **Stack Overflow Search:** search examples on Stack Overflow
 
 ## Installation
 
@@ -19,7 +21,7 @@ To install the extension, follow these steps:
 3. Search for "4s-navigation-tool" in the Extensions view search box.
 4. Click on the extension in the search results and then click the Install button.
 
-## Usage
+**Enjoy!**
 
 ### Go to Definition
 
@@ -42,4 +44,3 @@ To install the extension, follow these steps:
 
 If you encounter any issues or have feedback, please feel free to [create an issue on GitHub](https://github.com/STEPHENDIAS10/4s-navigation-tool/issues).
 
-**Enjoy!**
