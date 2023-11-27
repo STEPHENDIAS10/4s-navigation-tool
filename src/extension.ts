@@ -17,13 +17,18 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 	let disposableSubwordSearch = vscode.commands.registerCommand('4s-navigation-tool.subwordSearch', () => {
-        const searchTerm = vscode.window.activeTextEditor?.selections[0]?.toString();
+        const searchTerm = vscode.window.activeTextEditor?.document.getText(
+            vscode.window.activeTextEditor?.selection
+        );
         if (searchTerm) {
+            const escapedSearchTerm = searchTerm.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
             vscode.commands.executeCommand('workbench.action.findInFiles', {
-                query: `\\b${searchTerm}\\b`,
+                query: `\\b${escapedSearchTerm}\\b`,
                 isRegex: true,
                 matchWholeWord: true
             });
+        } else {
+            vscode.window.showInformationMessage('No subword selected for search.');
         }
     });
 
